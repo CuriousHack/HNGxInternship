@@ -1,7 +1,7 @@
 <?php
 
 require 'config.php';
-require '../Validator.php';
+require 'Validator.php';
 $slack = trim($_GET['slack_name']);
 $track = trim($_GET['track']);
 
