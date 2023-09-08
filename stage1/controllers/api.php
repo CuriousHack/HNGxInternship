@@ -14,7 +14,10 @@ if (!Validator::entry($track)) {
 };
 
 $currentDay = date('l');
-$currentTime = gmdate('y-m-d H:m:s');
+$date = new DateTime();
+$formatted_date = $date->format('Y-m-d\TH:i:s\Z');
+$currentTime = gmdate('Y-m-d H:i:s');
+$fileUrl = "https://github.com/CuriousHack/HNGxInternship/blob/main/stage1/controllers/api.php";
 $repoUrl = "https://github.com/CuriousHack/HNGxInternship";
 $statusCode = 200;
 
@@ -22,9 +25,9 @@ $param = json_encode(
     [
         "slack_name" => "$slack",
         "current_day" => "$currentDay",
-        "utc_time" => "$currentTime",
+        "utc_time" => "$formatted_date",
         "track" => "$track",
-        "github_file_url" => "",
+        "github_file_url" => "$fileUrl",
         "github_repo_url" => "$repoUrl",
         "status_code" => "$statusCode",
     ]
