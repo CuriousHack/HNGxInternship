@@ -17,7 +17,7 @@ $currentDay = date('l');
 $date = new DateTime();
 $formatted_date = $date->format('Y-m-d\TH:i:s\Z');
 $currentTime = gmdate('Y-m-d H:i:s');
-$fileUrl = "https://github.com/CuriousHack/HNGxInternship/blob/main/stage1/controllers/api.php";
+$fileUrl = "https://github.com/CuriousHack/HNGxInternship/blob/main/controllers/api.php";
 $repoUrl = "https://github.com/CuriousHack/HNGxInternship";
 $statusCode = 200;
 
