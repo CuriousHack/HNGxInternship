@@ -1,1 +1,1 @@
-HNGx Internship repository
+stage 1 task for HNGx Internship
